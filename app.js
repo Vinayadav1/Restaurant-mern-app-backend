@@ -11,7 +11,7 @@ dotenv.config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URI],
+    origin: [process.env.FRONTEND_URI, "https://restaurant-app.onrender.com"],
     methods: ["POST"],
     credentials: true,
   })
